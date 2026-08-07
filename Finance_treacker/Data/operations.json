@@ -1,0 +1,60 @@
+[
+    {
+        "id": 0,
+        "day": "2026-6-7",
+        "type": "in",
+        "refill": 800.0
+    },
+    {
+        "food": 25.0,
+        "car": 0.0,
+        "education": 0.0,
+        "wear": 0.0,
+        "homehold": 0.0,
+        "fun": 40.0,
+        "other": 0.0,
+        "comment": "",
+        "id": 1,
+        "day": "2026-8-7",
+        "type": "out"
+    },
+    {
+        "food": 20.0,
+        "car": 0.0,
+        "education": 0.0,
+        "wear": 0.0,
+        "homehold": 0.0,
+        "fun": 0.0,
+        "other": 0.0,
+        "comment": "0",
+        "id": 2,
+        "day": "2026-8-7",
+        "type": "out"
+    },
+    {
+        "food": 0,
+        "car": 0,
+        "education": 0,
+        "wear": 0,
+        "homehold": 0,
+        "fun": 0,
+        "other": 0,
+        "comment": "",
+        "id": 3,
+        "day": "2026-8-7",
+        "type": "out"
+    },
+    {
+        "food": 5.0,
+        "car": 0,
+        "education": 0,
+        "wear": 0,
+        "homehold": 0,
+        "fun": 25.0,
+        "other": 0,
+        "comment": "",
+        "id": 4,
+        "day": "2026-8-7",
+        "type": "out"
+    }
+]
