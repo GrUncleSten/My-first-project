@@ -8,21 +8,22 @@ from statistic.balance import balance
 
 def main():
     print("Welcome to the budget manager!")
-    filiname = prepare()
-    operations = start_main(filiname)
-    answ = reqest_to_user()
-    if answ.strip().lower() == "o":
-        operations_main(operations)
-    elif answ.strip().lower() == "s":
-        print("Statistic is not implemented yet") 
-        print(f"Your operations -\n{chr(10).join(str(op) for op in operations)}")
-    elif answ.strip().lower() == "b":
-        print(f"Your balance is: {balance(operations)}")
-    elif answ.strip().lower() == "e":
-        print("Goodbye!")
-        return    
-    write_in_file(filiname, operations)
-    print(f"Your balance is: {balance(operations)}") 
- 
+    while True:
+        filiname = prepare()
+        operations = start_main(filiname)
+        answ = reqest_to_user()
+        if answ.strip().lower() == "o":
+            operations = operations_main(operations)
+            write_in_file(filiname, operations)
+        elif answ.strip().lower() == "s":
+            print("Statistic is not implemented yet") 
+            print(f"Your operations -\n{"\n".join(str(op) for op in operations)}")
+            print(f"Your balance is: {balance(operations)}")
+        elif answ.strip().lower() == "b":
+            print(f"Your balance is: {balance(operations)}")
+        elif answ.strip().lower() == "e":
+            write_in_file(filiname, operations)
+            print("Goodbye!")
+            return    
 if __name__ == "__main__":
     main()

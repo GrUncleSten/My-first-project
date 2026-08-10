@@ -1,4 +1,4 @@
-from Shared.Date import datemark
+from shared.date import datemark
 
             
 def which_statistic():
@@ -8,7 +8,7 @@ def which_statistic():
             ask_s = int(input("Which statistic do you want to see? "
               "1 -> for all time  "
               "2 -> for some time  "
-              "3 -> for category.  Your choice:  "))
+              "3 -> for category on some time.  Your choice:  "))
             if ask_s in (1,2,3):
                 break
             else:
@@ -30,21 +30,17 @@ def which_statistic():
         end = datemark()
         print("Please, choice the category what do you want. Make your choice with button - Y,  " \
             "if you want not press the Enter")
-        while True: 
-            answ = None    
-            for one in categories:    
-                choice = input(f"{one}:  ")
-                if choice.lower() == "y":
-                    answ = one
-                    break
-                elif choice == "":
-                    continue 
-                else:
-                    print("Try again please")
-            if answ:
-                return start, end, answ
-            else:
-                print("You must choice at least one category!")        
+        while True:   
+            for one in categories: 
+                while True:   
+                    choice = input(f"{one}:  ")
+                    if choice.lower().strip() == "y":
+                        return start, end, one
+                    elif choice.strip() == "":
+                        break
+                    else:
+                        print("Try again please")       
+            print("You must choose at least one category!")        
 
                     
 
