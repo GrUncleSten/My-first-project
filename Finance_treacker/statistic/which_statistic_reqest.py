@@ -16,13 +16,13 @@ def which_statistic():
         except ValueError:
             print("It must be an integer!")
     if ask_s == 1:
-        return None, None, None
+        return None, None, None, 1
     elif ask_s == 2:
         print("Enter a start date.")
         start = datemark()
         print("Enter a end date.")
         end = datemark()
-        return start, end, None 
+        return start, end, None, 2
     else:
         print("Enter a start date.")
         start = datemark()
@@ -35,7 +35,7 @@ def which_statistic():
                 while True:   
                     choice = input(f"{one}:  ")
                     if choice.lower().strip() == "y":
-                        return start, end, one
+                        return start, end, one, 3
                     elif choice.strip() == "":
                         break
                     else:

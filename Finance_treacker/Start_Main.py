@@ -1,7 +1,7 @@
-from Start.Start import start
-from Start.First_start import first_start
-from Shared.Read_file import read_file
-from Reqests.Choice import choice
+from start.start import start
+from start.first_start import first_start
+from shared.read_file import read_file
+from requests.choice import choice
 
                   
 

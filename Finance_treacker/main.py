@@ -4,11 +4,13 @@ from requests.request_to_do import reqest_to_user
 from shared.write_in_file import write_in_file
 from start.start_main import start_main
 from statistic.balance import balance
+from statistic.statisticmain import main_statistic
 
 
 def main():
     print("Welcome to the budget manager!")
     while True:
+        
         filiname = prepare()
         operations = start_main(filiname)
         answ = reqest_to_user()
@@ -16,8 +18,10 @@ def main():
             operations = operations_main(operations)
             write_in_file(filiname, operations)
         elif answ.strip().lower() == "s":
-            print("Statistic is not implemented yet") 
-            print(f"Your operations -\n{"\n".join(str(op) for op in operations)}")
+            #print("Statistic is not implemented yet") 
+            #print(f"Your operations -\n{"\n".join(str(op) for op in operations)}")
+            my_statistic = main_statistic(operations)
+            print(my_statistic)
             print(f"Your balance is: {balance(operations)}")
         elif answ.strip().lower() == "b":
             print(f"Your balance is: {balance(operations)}")
