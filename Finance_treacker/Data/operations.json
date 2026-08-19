@@ -1,7 +1,7 @@
 [
     {
         "id": 0,
-        "day": "2026-6-7",
+        "day": "2026-06-07",
         "type": "in",
         "refill": 800.0
     },
@@ -15,7 +15,7 @@
         "other": 0.0,
         "comment": "",
         "id": 1,
-        "day": "2026-8-7",
+        "day": "2026-08-07",
         "type": "out"
     },
     {
@@ -28,7 +28,7 @@
         "other": 0,
         "comment": "",
         "id": 3,
-        "day": "2026-8-7",
+        "day": "2026-08-07",
         "type": "out"
     },
     {
@@ -41,7 +41,7 @@
         "other": 0,
         "comment": "",
         "id": 4,
-        "day": "2026-8-7",
+        "day": "2026-08-07",
         "type": "out"
     },
     {
@@ -54,7 +54,42 @@
         "other": 5.0,
         "comment": "",
         "id": 5,
-        "day": "2026-8-7",
+        "day": "2026-08-07",
+        "type": "out"
+    },
+    {
+        "food": 250.0,
+        "car": 0,
+        "education": 0,
+        "wear": 10.0,
+        "homehold": 0,
+        "fun": 0,
+        "other": 0,
+        "comment": "buy products",
+        "id": 6,
+        "day": "2026-08-15",
+        "type": "out"
+    },
+    {
+        "refill": 200.0,
+        "salary": 0,
+        "side_job": 0,
+        "comment": "",
+        "id": 7,
+        "day": "2026-08-19",
+        "type": "in"
+    },
+    {
+        "food": 0,
+        "car": 25.0,
+        "education": 0,
+        "wear": 0,
+        "homehold": 0,
+        "fun": 0,
+        "other": 0,
+        "comment": "",
+        "id": 8,
+        "day": "2026-08-20",
         "type": "out"
     }
 ]

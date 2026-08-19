@@ -18,9 +18,9 @@ def which_statistic():
     if ask_s == 1:
         return None, None, None, 1
     elif ask_s == 2:
-        print("Enter a start date.")
+        print("Enter a start date:")
         start = datemark()
-        print("Enter a end date.")
+        print("Enter a end date:")
         end = datemark()
         return start, end, None, 2
     else:

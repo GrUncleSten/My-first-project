@@ -18,10 +18,10 @@ def main():
             operations = operations_main(operations)
             write_in_file(filiname, operations)
         elif answ.strip().lower() == "s":
-            #print("Statistic is not implemented yet") 
-            #print(f"Your operations -\n{"\n".join(str(op) for op in operations)}")
             my_statistic = main_statistic(operations)
-            print(my_statistic)
+            for operation in my_statistic[0]:
+                print("")
+                print(operation, end="\n")
             print(f"Your balance is: {balance(operations)}")
         elif answ.strip().lower() == "b":
             print(f"Your balance is: {balance(operations)}")
