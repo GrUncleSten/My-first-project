@@ -22,7 +22,10 @@ def main():
             for operation in my_statistic[0]:
                 print("")
                 print(operation, end="\n")
+            print(f"Spend on curent category, on curent period - {my_statistic[1]}")
+            print("")
             print(f"Your balance is: {balance(operations)}")
+            print("")
         elif answ.strip().lower() == "b":
             print(f"Your balance is: {balance(operations)}")
         elif answ.strip().lower() == "e":

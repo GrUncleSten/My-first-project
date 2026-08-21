@@ -5,7 +5,7 @@ def search_date(lst,start=None,end=None):
             if start <= item["day"] <= end:
                 on_date_operations.append(item)    
         elif start is not None:
-            if start >= item["day"]:
+            if start <= item["day"]:
                 on_date_operations.append(item)                      
         elif end is not None:
             if item["day"] >= end:
