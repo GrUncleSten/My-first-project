@@ -1,13 +1,15 @@
-def choice():
+from shared.translation import translate
+
+def choice(lang):
     while True:
         try:
-            user_choice = int(input("Please make your choice: 1 - import file; 2 - new file. Your choice:"))          
+            user_choice = int(input(translate("choice_file",lang)))          
             if user_choice not in (1,2):
-                print("It must be 1 or 2!") 
+                print(translate("error_choice",lang)) 
                 continue
             return user_choice
         except ValueError:
-            print("It must be a number!")
+            print(translate("integer_error",lang))
 
            
 

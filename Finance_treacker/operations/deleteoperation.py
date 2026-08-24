@@ -1,25 +1,25 @@
+from shared.translation import translate
 from shared.date import datemark
 
 
-def delete_operations(lst):
-    day_delete = datemark()
+def delete_operations(lst,lang):
+    day_delete = datemark(lang)
     candidates = []
     for operation in lst:
         if operation["day"] == day_delete:
             candidates.append(operation)
     if not candidates:
-        print("No operations was found for this date!")
+        print(translate("operations_on_date", lang))
         return lst        
-    print("Choose the operation, which do you want to delete from this list. " \
-        "Make your choice with button -> Y, if you want not, press the Enter")    
+    print(translate("choice_delete_optration", lang))    
     for item in candidates:
         while True:
-            deleted = input(f"This one - {item}?: ")
+            deleted = input(translate("this_one", lang, item = item))
             if deleted.strip().lower() == "y":
                 lst.remove(item)
                 return lst
             elif deleted.strip() == "":
                 break
             else:
-                print("Wrong input, try again!")
+                print(translate("wrong_input", lang))
                 

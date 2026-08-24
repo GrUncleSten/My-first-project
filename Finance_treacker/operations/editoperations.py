@@ -1,17 +1,17 @@
+from shared.translation import translate
 from shared.date import datemark
 
 
-def edit_operations(lst):
-    edited_date = datemark()
+def edit_operations(lst, lang):
+    edited_date = datemark(lang)
     candidates = []
     for operation in lst:
         if operation["day"] == edited_date:
             candidates.append(operation)
     if not candidates:
-        print("No operations was found for this date!")
+        print(translate("operations_on_date", lang))
         return lst        
-    print("which category of operation you want to edit? " \
-            "If you will see that one - press -> Y, if you want to pass, press the Enter")
+    print(translate("wich_operation_edit", lang))
     for item in candidates:
         for key in item:
             if key in("id","comment","type","day"):
@@ -21,13 +21,13 @@ def edit_operations(lst):
                     answer = input(f"{key}: ")
                     if answer.strip().lower() == "y":
                         try:
-                            item[key] = float(input("Enter a new value: "))
+                            item[key] = float(input(translate("new_value", lang)))
                             return lst
                         except ValueError:
-                            print("It must be a number!") 
+                            print(translate("integer_error", lang)) 
                     elif answer.strip() == "":
                         break   
                     else:
-                        print("Wrong input, try again!")    
+                        print(translate("wrong_input", lang))    
     return lst                           
                     

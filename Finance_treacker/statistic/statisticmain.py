@@ -3,8 +3,8 @@ from statistic.statistic_by_date import statistic_by_date
 from statistic.statisticbycategory import statistic_by_category
 
 
-def main_statistic(lst):
-    wich_st_answ = which_statistic()
+def main_statistic(lst,lang):
+    wich_st_answ = which_statistic(lang)
     if wich_st_answ[3] == 1:
        my_stat = statistic_by_date(lst,None,None)
        return my_stat

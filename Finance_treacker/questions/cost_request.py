@@ -1,7 +1,9 @@
-def cost_request(dct):
+from shared.translation import translate
+
+def cost_request(dct,lang):
     for key in dct:
         while True:
-            answer = input(f"for {key}:  ")
+            answer = input(translate( "input_cost", lang, key = key))
             if answer.strip() == "":
                 dct[key] = 0
                 break
@@ -11,7 +13,7 @@ def cost_request(dct):
                 if dct[key] >= 0:
                     break
                 else:
-                    print("It must be a non-negative number!")
+                    print(translate("number_error", lang))
             except ValueError:
-                print("It must be a number!")
+                print(translate("integer_error", lang))
     return dct            

@@ -5,30 +5,37 @@ from shared.write_in_file import write_in_file
 from start.start_main import start_main
 from statistic.balance import balance
 from statistic.statisticmain import main_statistic
+from shared.ask_language import choice_lang
+from shared.translation import translate
 
 
 def main():
-    print("Welcome to the budget manager!")
+    lang = choice_lang()
+    print(translate("welcome", lang))
+    filiname = prepare()
+    operations = start_main(filiname,lang)
     while True:
-        filiname = prepare()
-        operations = start_main(filiname)
-        answ = reqest_to_user()
+        answ = reqest_to_user(lang)
+        curent_balance = balance(operations) 
         if answ.strip().lower() == "o":
-            operations = operations_main(operations)
+            operations = operations_main(operations,lang)
             write_in_file(filiname, operations)
         elif answ.strip().lower() == "s":
-            my_statistic = main_statistic(operations)
+            my_statistic = main_statistic(operations,lang)
             for operation in my_statistic[0]:
                 print("")
                 print(operation, end="\n")
-            print(f"Spend on curent category, on curent period - {my_statistic[1]}")
+            #print(translate("spend_on_category",lang, my_statistic = balance(my_statistic[1])))
             print("")
-            print(f"Your balance is: {balance(operations)}")
+            print(translate("balance",lang,balance = curent_balance))
         elif answ.strip().lower() == "b":
-            print(f"Your balance is: {balance(operations)}")
+            print(translate("balance",lang,balance = curent_balance))
         elif answ.strip().lower() == "e":
             write_in_file(filiname, operations)
-            print("Goodbye!")
+            print(translate("Goodbye",lang))
             return    
 if __name__ == "__main__":
     main()
+
+
+   

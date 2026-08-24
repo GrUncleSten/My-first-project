@@ -1,11 +1,14 @@
-def type_operations():
+from shared.translation import translate 
+
+
+def type_operations(lang):
     while True:
         try:
-            type = input("Choice the type of your operation: in => charge, out => spend. Your choice: ")
+            type = input(translate("type_operations", lang))
             if type not in ("in","out"):
-                print("Enter correct type of operation!")
+                print(translate("type_of_operation_error", lang))
             else:
                 return type
         except ValueError:
-            print("Enter correct type of operation!")
+            print(translate("type_of_operation_error", lang))
     

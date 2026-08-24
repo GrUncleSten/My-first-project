@@ -1,8 +1,9 @@
-def reqest_to_user():
+from shared.translation import translate
+
+def reqest_to_user(lang):
     while True:
-        ask = input("What do you want to do? Make your choice - s -> see statistic, o -> to do with operations, b -> see balance, e -> exit \n" 
-                       "Your choice: ")
+        ask = input(translate("ask_to_do",lang))
         if ask.strip().lower() in ("s", "o", "b", "e"):
             return ask
         else:
-            print("Try again please")
+            print(translate("wrong_input",lang))

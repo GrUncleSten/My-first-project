@@ -1,6 +1,9 @@
-def request_operations():
+from shared.translation import translate 
+
+
+def request_operations(lang):
     lst_of_doing = ["Add","Delete","Edit"]
-    print("What do you want to do? (Add/Delete/Edit) Press Y for agree with the action, or type 'exit' to quit:  ")
+    print(translate("operation_to_do", lang))
     while True:
         for act in lst_of_doing:
             answer = input(f"{act}:  ")
@@ -11,4 +14,4 @@ def request_operations():
             elif answer == "":
                 continue
             else:
-                print("Invalid input. Please try again.")
+                print(translate("wrong_input", lang))
