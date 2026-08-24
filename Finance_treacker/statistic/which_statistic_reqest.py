@@ -2,7 +2,7 @@ from shared.date import datemark
 
             
 def which_statistic():
-    categories = ['food',"car", "education", "wear", "fun","homehold", "other", "salary", "refill", "side_job"]
+    categories = ["food","car", "education", "wear", "fun","homehold", "other", "salary", "refill", "side_job"]
     while True:
         try:
             ask_s = int(input("Which statistic do you want to see? "
@@ -14,7 +14,7 @@ def which_statistic():
             else:
                 print("Try again please")
         except ValueError:
-            print("It must be an integer!")
+            print("It must be a number!")
     if ask_s == 1:
         return None, None, None, 1
     elif ask_s == 2:

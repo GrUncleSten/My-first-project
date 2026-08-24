@@ -4,14 +4,14 @@ from shared.date import datemark
 def edit_operations(lst):
     edited_date = datemark()
     candidates = []
-    print("which category of operation you want to edit? " \
-        "If you will see that one - press -> Y, if you want to pass, press the Enter")
     for operation in lst:
         if operation["day"] == edited_date:
             candidates.append(operation)
     if not candidates:
-        print("No operations found for this date!")
+        print("No operations was found for this date!")
         return lst        
+    print("which category of operation you want to edit? " \
+            "If you will see that one - press -> Y, if you want to pass, press the Enter")
     for item in candidates:
         for key in item:
             if key in("id","comment","type","day"):
@@ -24,7 +24,7 @@ def edit_operations(lst):
                             item[key] = float(input("Enter a new value: "))
                             return lst
                         except ValueError:
-                            print("It must be an integer!") 
+                            print("It must be a number!") 
                     elif answer.strip() == "":
                         break   
                     else:

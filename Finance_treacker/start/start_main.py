@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from requests.choice import choice
+from questions.choice import choice
 from shared.read_file import read_file
 from shared.write_in_file import write_in_file
 from start.first_start import first_start

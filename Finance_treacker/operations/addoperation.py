@@ -1,5 +1,5 @@
-from requests.cost_request import cost_request
-from requests.type_operation import type_operations
+from questions.cost_request import cost_request
+from questions.type_operation import type_operations
 from shared.date import datemark
 from start.identificator import identificator
 

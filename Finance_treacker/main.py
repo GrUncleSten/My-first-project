@@ -1,6 +1,6 @@
 from operations.operations_main import operations_main
 from prepare import prepare
-from requests.request_to_do import reqest_to_user
+from questions.request_to_do import reqest_to_user
 from shared.write_in_file import write_in_file
 from start.start_main import start_main
 from statistic.balance import balance
@@ -10,7 +10,6 @@ from statistic.statisticmain import main_statistic
 def main():
     print("Welcome to the budget manager!")
     while True:
-        
         filiname = prepare()
         operations = start_main(filiname)
         answ = reqest_to_user()
@@ -25,7 +24,6 @@ def main():
             print(f"Spend on curent category, on curent period - {my_statistic[1]}")
             print("")
             print(f"Your balance is: {balance(operations)}")
-            print("")
         elif answ.strip().lower() == "b":
             print(f"Your balance is: {balance(operations)}")
         elif answ.strip().lower() == "e":
