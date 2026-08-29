@@ -7,12 +7,15 @@ from questions.requestoperationsdoing import request_operations
 def operations_main(operations,lang):
     action = request_operations(lang)
     if action == "Add":
-        user_request(operations,lang)
+        user_request(operations,lang) 
     elif action == "Delete":    
         delete_operations(operations,lang)
-    else:
-        edit_operations(operations,lang)    
-    return operations    
+    elif action == "Edit":
+        edit_operations(operations,lang)
+    elif action is None:
+        return operations 
+    return operations      
+       
         
     
 

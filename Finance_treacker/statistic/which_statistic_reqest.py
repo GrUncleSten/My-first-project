@@ -16,8 +16,8 @@ def which_statistic(lang):
     if ask_s == 1:
         return None, None, None, 1
     elif ask_s == 2:
-        des = input(translate("want_start_date", lang))
         while True:
+            des = input(translate("want_start_date", lang))
             if des.lower().strip() == "y":
                 start = datemark(lang)
                 break
@@ -25,21 +25,21 @@ def which_statistic(lang):
                 start = None
                 break
             else:
-                print(translate("wrong_input", lang))
-        des1 = input(translate("want_end_date", lang))  
+                print(translate("wrong_input", lang))  
         while True:
+            des1 = input(translate("want_end_date", lang))
             if des1.lower().strip() == "y":
                 end = datemark(lang)
                 break
-            elif des1.lower().lower() == "":    
+            elif des1.lower().strip() == "":    
                 end = None
                 break
             else:
                 print(translate("wrong_input", lang))
         return start, end, None, 2
     else:
-        design = input(translate("want_start_date", lang))
         while True:
+            design = input(translate("want_start_date", lang))
             if design.lower().strip() == "y":
                 start = datemark(lang)
                 break
@@ -47,13 +47,13 @@ def which_statistic(lang):
                 start = None
                 break
             else:
-                print(translate("wrong_input", lang))
-        design1 = input(translate("want_end_date", lang))  
+                print(translate("wrong_input", lang))  
         while True:
+            design1 = input(translate("want_end_date", lang))
             if design1.lower().strip() == "y":
                 end = datemark(lang)
                 break
-            elif design1.lower().lower() == "":    
+            elif design1.lower().strip() == "":    
                 end = None
                 break
             else:
@@ -69,7 +69,7 @@ def which_statistic(lang):
                     break
                 else:
                     print(translate("again", lang))       
-                    print(translate("choice_one_category", lang))        
+        print(translate("choice_one_category", lang))        
 
                     
 

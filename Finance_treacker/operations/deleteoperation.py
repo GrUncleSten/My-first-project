@@ -22,4 +22,5 @@ def delete_operations(lst,lang):
                 break
             else:
                 print(translate("wrong_input", lang))
+    return lst    
                 

@@ -12,13 +12,13 @@ def user_request(lst, lang):
     day_date = datemark(lang)
     my_type = type_operations(lang)
     if my_type == "out":
-        action = cost_request(spend) 
+        action = cost_request(spend,lang) 
         action["comment"] = input(translate("comment", lang))
         action["id"] = ident
         action["day"] = day_date
         action["type"] = my_type
     else:    
-        action = cost_request(top_up)
+        action = cost_request(top_up,lang)
         action["comment"] = input(translate("comment", lang))
         action["id"] = ident
         action["day"] = day_date
