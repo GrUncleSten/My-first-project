@@ -6,7 +6,7 @@ def request_operations(lang):
     print(translate("operation_to_do", lang))
     while True:
         for act in lst_of_doing:
-            answer = input(f"{act}:  ")
+            answer = input(translate(f"do_{act}",lang))
             if answer.upper() == 'Y':
                 return act
             elif answer.lower() == 'exit':

@@ -62,7 +62,7 @@ def which_statistic(lang):
     while True:   
         for one in categories: 
             while True:   
-                choice = input(f"{one}:  ")
+                choice = input(translate(f"category_{one} ", lang))
                 if choice.lower().strip() == "y":
                     return start, end, one, 3
                 elif choice.strip() == "":

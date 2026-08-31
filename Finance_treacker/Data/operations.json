@@ -91,5 +91,14 @@
         "id": 8,
         "day": "2026-08-20",
         "type": "out"
+    },
+    {
+        "refill": 0,
+        "salary": 0,
+        "side_job": 0,
+        "comment": "",
+        "id": 9,
+        "day": "2026-08-30",
+        "type": "in"
     }
 ]

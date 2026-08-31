@@ -34,7 +34,7 @@ ru = {"welcome":"Добро пожаловать в финансовый тре�
 
     "wrong_input":"Неправльный ввод!Попробуйте снова",
 
-    "operation_to_do":("Что вы хотите сделать?(Add/Добавить,Edit/Редактировать,Delete/Удалить)\n"
+    "operation_to_do":("Что вы хотите сделать?(Добавить,Редактировать,Удалить)\n"
     " Нажмите Y если выбрали, или введите 'exit', чтобы выйти: "),
 
     "type_operations":("Выберите тип операции: in => входящие, out => исходящие.\n"
@@ -46,7 +46,7 @@ ru = {"welcome":"Добро пожаловать в финансовый тре�
 
     "balance":"Ваш баланс: {balance}",
 
-     "Goodbye":"До свидания",
+    "Goodbye":"До свидания",
 
     "Wich_statistic":("Какую статистику вы хотите увидеть?\n"
     "1 - за всё время\n"
@@ -71,7 +71,23 @@ ru = {"welcome":"Добро пожаловать в финансовый тре�
     "wich_operation_edit":("Какую операцию вы хотели бы изменить?\n"
     "Если увидите её, нажмите Y, если хотите пропустить, нажмите Enter"),
 
-    "new_value":"Введите новое значение:  "}
+    "new_value":"Введите новое значение:  ",
+    
+    "category_food":"Еда",
+    "category_car":"Машина",
+    "category_education":"Образование",
+    "category_wear":"Одежда",
+    "category_fun":"Развлечения",
+    "category_homehold":"Домашние траты",
+    "category_other":"Другое",
+    "category_salary":"Зарплата",
+    "category_refill":"Пополнение",
+    "category_side_job":"Подработка",
+    
+    "do_Add":"Добавить",
+    "do_Delete":"Удалить",
+    "do_Edit":"Редактировать",
+             }
 
 
 
@@ -93,7 +109,7 @@ en = {"welcome":"Welcome to the budget manager!",
 
       "choice_file":"Please make your choice: 1 - import file; 2 - new file. Your choice:",
 
-      "error_choice":"It must be 1 or 2!", "comment":"Enter a comment: ", "input_cost":"Forkey: ",
+      "error_choice":"It must be 1 or 2!", "comment":"Enter a comment: ", "input_cost":"For {key}: ",
 
       "number_error":"It must be a non-negative number!",
 
@@ -143,7 +159,22 @@ en = {"welcome":"Welcome to the budget manager!",
       "wich_operation_edit":("Which category of operation you want to edit? \n"
       "If you will see that one - press -> Y, if you want to pass, press the Enter"),
 
-      "new_value":"Enter a new value: "}
+      "new_value":"Enter a new value: ",
+       
+      "category_food":"Food",
+      "category_car":"Car",
+      "category_education":"Education",
+      "category_wear":"Wear",
+      "category_fun":"Fun",
+      "category_homehold":"Homehold",
+      "category_other":"Other",
+      "category_salary":"Salary",
+      "category_refill":"Refill",
+      "category_side_job":"Side_job",
+      
+      "do_Add":"Add",
+      "do_Delete":"Delete",
+      "do_Edit":"Edit"}
 
 
 

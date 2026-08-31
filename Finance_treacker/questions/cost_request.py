@@ -3,7 +3,7 @@ from shared.translation import translate
 def cost_request(dct,lang):
     for key in dct:
         while True:
-            answer = input(translate( "input_cost", lang, key = key))
+            answer = input(translate(f"category_{key}", lang))
             if answer.strip() == "":
                 dct[key] = 0
                 break
