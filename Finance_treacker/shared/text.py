@@ -32,6 +32,8 @@ ru = {"welcome":"Добро пожаловать в финансовый тре�
 
     "again":"Попробуйте снова!",
 
+    "wrong_input1":"Вам нужно выбрать хотя бы что-то",
+
     "wrong_input":"Неправльный ввод!Попробуйте снова",
 
     "operation_to_do":("Что вы хотите сделать?(Добавить,Редактировать,Удалить)\n"
@@ -48,7 +50,7 @@ ru = {"welcome":"Добро пожаловать в финансовый тре�
 
     "Goodbye":"До свидания",
 
-    "Wich_statistic":("Какую статистику вы хотите увидеть?\n"
+    "wich_statistic":("Какую статистику вы хотите увидеть?\n"
     "1 - за всё время\n"
     "2 - за выбранный период\n"
     "3 - за выбранный период и по категории. Ваш выбор:  "),
@@ -73,20 +75,48 @@ ru = {"welcome":"Добро пожаловать в финансовый тре�
 
     "new_value":"Введите новое значение:  ",
     
-    "category_food":"Еда",
-    "category_car":"Машина",
-    "category_education":"Образование",
-    "category_wear":"Одежда",
-    "category_fun":"Развлечения",
-    "category_homehold":"Домашние траты",
-    "category_other":"Другое",
-    "category_salary":"Зарплата",
-    "category_refill":"Пополнение",
-    "category_side_job":"Подработка",
+    "category_food: ":"Еда: ",
+    "category_car: ":"Машина: ",
+    "category_education: ":"Образование: ",
+    "category_wear: ":"Одежда: ",
+    "category_fun: ":"Развлечения: ",
+    "category_homehold: ":"Домашние траты: ",
+    "category_other: ":"Другое: ",
+    "category_salary: ":"Зарплата: ",
+    "category_refill: ":"Пополнение: ",
+    "category_side_job: ":"Подработка: ",
     
     "do_Add":"Добавить",
     "do_Delete":"Удалить",
     "do_Edit":"Редактировать",
+    
+    "op_1st":"категории",
+
+    "op_many":"категориям",  
+     
+    "output_st":"За период с {start} по {end}, было проведено операций -> {count} \n"
+    "Сумма по {op}: \n"
+    "{statistic}",
+    
+    "oper_incoming":"Входящие  ",
+
+    "oper_out":"Исходящие  ",
+
+    "oper_exit":"Выход   ",
+
+    "oper_both":"Оба типа операций  ",
+
+    "choice_op":"Выберите тип операции, выбор подтвердите клавишей Y, чтобы пропустить нажмите Enter ",
+
+    "ask_to_return":"Если хотите выйти нажмите Y, если хотите продолжить выбор нажмите N:  ",
+
+    "empty_lst":"Нет данных",
+    
+    "wrong_type":"Нельзя выбрать оба типа статистики для простмотра категорий!",
+
+
+
+
              }
 
 
@@ -123,6 +153,8 @@ en = {"welcome":"Welcome to the budget manager!",
 
       "again":"Try again please", 
 
+      "wrong_input1":"You need choose something",
+
       "wrong_input":"Invalid input. Please try again.",
 
       "operation_to_do":"What do you want to do? (Add/Delete/Edit) Press Y for agree with the action, or type 'exit' to quit:  ",
@@ -135,7 +167,7 @@ en = {"welcome":"Welcome to the budget manager!",
 
       "balance":"Your balance is: {balance}", "Goodbye":"Goodbye",
 
-      "Wich_statistic":("Which statistic do you want to see?\n "
+      "wich_statistic":("Which statistic do you want to see?\n "
       "1 -> for all time  \n"
       "2 -> for some time  \n"
       "3 -> for category on some time.  Your choice:  "),
@@ -154,27 +186,54 @@ en = {"welcome":"Welcome to the budget manager!",
       "choice_delete_optration":("Choose the operation, which do you want to delete from this list.\n "
         "Make your choice with button -> Y, if you want not, press the Enter"),
 
-      "this_one":"This one - {item?}: ",
+      "this_one":"This one - {item}: ",
 
       "wich_operation_edit":("Which category of operation you want to edit? \n"
       "If you will see that one - press -> Y, if you want to pass, press the Enter"),
 
       "new_value":"Enter a new value: ",
        
-      "category_food":"Food",
-      "category_car":"Car",
-      "category_education":"Education",
-      "category_wear":"Wear",
-      "category_fun":"Fun",
-      "category_homehold":"Homehold",
-      "category_other":"Other",
-      "category_salary":"Salary",
-      "category_refill":"Refill",
-      "category_side_job":"Side_job",
+      "category_food: ":"Food: ",
+      "category_car: ":"Car: ",
+      "category_education: ":"Education: ",
+      "category_wear: ":"Wear: ",
+      "category_fun: ":"Fun: ",
+      "category_homehold: ":"Homehold: ",
+      "category_other: ":"Other: ",
+      "category_salary: ":"Salary: ",
+      "category_refill: ":"Refill: ",
+      "category_side_job: ":"Side_job: ",
       
       "do_Add":"Add",
       "do_Delete":"Delete",
-      "do_Edit":"Edit"}
+      "do_Edit":"Edit",
+        
+      "op_1st":"category",
+  
+      "op_many":"categories",  
+        
+      "output_st":"Period from {start} to {end},had an operation -> {count} \n"
+      "Summ for {op}: \n"
+      "{statistic}",
+
+      "oper_incoming":"Incoming  ",
+  
+      "oper_out":"Outgoing  ",
+  
+      "oper_exit":"Exit  ",
+
+      "oper_both":"Both type of operations  ",
+  
+      "choice_op":"Select the type of operation, confirm with Y to skip Enter",
+  
+      "ask_to_return":"If you want to exit, press Y, if you want to continue, press N:  ",
+
+      "empty_lst":"There is no data",
+
+      "wrong_type":"You can’t select both types of statistics to filter categories!",
+      
+      }
+                
 
 
 
