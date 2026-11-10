@@ -27,9 +27,12 @@ def main():
             if my_statistic == "exit":
                 if go_back(lang) == "exit":
                     print(translate("Goodbye",lang))
-                    return 
-            print(my_statistic)
-            print(translate("balance",lang,balance = curent_balance))
+                    return
+            if my_statistic == "Empty":
+                print(translate("empty_lst",lang))     
+            else:    
+                print(my_statistic)
+                print(translate("balance",lang,balance = curent_balance))
         elif answ.strip().lower() == "b":
             print(translate("balance",lang,balance = curent_balance))
         elif answ.strip().lower() == "e":

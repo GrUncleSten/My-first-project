@@ -3,8 +3,7 @@ from shared.translation import translate
 
 def processing(data,lang,category=None):
     if len(data) == 0:
-        print(translate("empty_lst",lang))
-        return
+        return "Empty"
     sorted_data = sorted(data, key=lambda item: item["day"])
     statistic = {}
     count = len(data)

@@ -22,7 +22,12 @@ def edit_operations(lst, lang):
                     if answer.strip().lower() == "y":
                         try:
                             item[key] = float(input(translate("new_value", lang)))
-                            return lst
+                            if item["type"] == "in" and item[key] >= 0:
+                                return lst
+                            elif item["type"] == "out" and item[key] <= 0:
+                                return lst
+                            else:
+                                print(translate("wrong_input", lang))
                         except ValueError:
                             print(translate("integer_error", lang)) 
                     elif answer.strip() == "":

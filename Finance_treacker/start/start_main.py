@@ -13,6 +13,10 @@ def start_main(filename,lang):
 
     if isfile == "Ok":
         lst = read_file(filename)
+        if len(lst) == 0:
+            lst = first_start(lang)
+            write_in_file(filename, lst)
+            return lst
         return lst
 
     elif isfile == "First start":

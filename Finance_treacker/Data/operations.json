@@ -100,5 +100,14 @@
         "id": 9,
         "day": "2026-08-30",
         "type": "in"
+    },
+    {
+        "refill": 0,
+        "salary": 0,
+        "side_job": 0,
+        "comment": "",
+        "id": 10,
+        "day": "2026-11-25",
+        "type": "in"
     }
 ]
